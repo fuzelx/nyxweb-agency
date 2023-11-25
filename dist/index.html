@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>NYXWEB</title>
+</head>
+<style>
+    body {
+        font-family: 'Manrope', sans-serif;
+        background-color: #0e0e0e;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    .gardient {
+        font-size: 72px;
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .card-gradient {
+        background: rgb(0, 0, 0);
+        background: -moz-linear-gradient(128deg, rgba(0, 0, 0, 1) 28%, rgba(52, 52, 52, 1) 43%, rgba(98, 98, 98, 1) 49%, rgba(59, 59, 59, 1) 55%, rgba(0, 0, 0, 1) 71%);
+        background: -webkit-linear-gradient(128deg, rgba(0, 0, 0, 1) 28%, rgba(52, 52, 52, 1) 43%, rgba(98, 98, 98, 1) 49%, rgba(59, 59, 59, 1) 55%, rgba(0, 0, 0, 1) 71%);
+        background: linear-gradient(128deg, rgba(0, 0, 0, 1) 28%, rgba(52, 52, 52, 1) 43%, rgba(98, 98, 98, 1) 49%, rgba(59, 59, 59, 1) 55%, rgba(0, 0, 0, 1) 71%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+    }
+</style>
+
+<body>
+
+    <div id="root">
+        <div class="justify-center  flex items-center flex-col p-5">
+            <nav class="flex flex-row justify-center relative items-center w-full p-7 md:justify-between">
+                <ul class="hidden md:flex md:space-x-4  ">
+                    <li><a class="text-lg text-white p-2 hover:bg-neutral-700 hover:rounded-lg" href="#">Pricing</a>
+                    </li>
+                    <li><a class="text-lg text-white p-2 hover:bg-neutral-700 hover:rounded-lg" href="#">About</a></li>
+                </ul>
+                <img src="assets/Logo.svg" class="" alt="">
+                <a class="md:block hidden" href="#"><button
+                        class="  border text-white border-neutral-600 rounded-lg hover:border-neutral-400 p-3">Press G
+                        to Get started</button></a>
+            </nav>
+            <div
+                class="flex flex-col items-center justify-center space-y-6 lg:space-y-8 pt-20 relative  md:max-w-2xl lg:max-w-7xl mx-auto">
+                <div class="flex flex-col items-center justify-center space-y-2">
+                    <div data-aos="fade-down" class="flex flex-row items-center justify-center space-x-1">
+                        <img src="assets/flash.png" alt="">
+                        <span class="text-neutral-600 text-sm md:text-base font-semibold text-center m-1">DESIGN +
+                            DEVELOPMENT</span>
+                        <img src="assets/flash.png" alt="">
+                    </div>
+                    <div class="relative mb-7 flex flex-row items-center text-center justify-center space-x-2">
+                        <h1 data-aos="fade-up-right" class="text-white font-bold text-center text-4xl  xl md:text-6xl">
+                            We build superior websites that help your business grow fast</h1>
+                    </div>
+                    <div class="p-5 m-8">
+                        <p data-aos="fade-up" class="text-neutral-500 text-center text-lg md:text-2xl">We prioritize
+                            customer conversion first, then design!</p>
+                    </div>
+                    <div class=" flex flex-col justify-center items-center">
+                        <div class="m-3">
+
+                            <a href="#_"
+                                class="relative inline-flex items-center justify-start inline-block px-10 py-5 overflow-hidden font-bold rounded-full group">
+                                <span
+                                    class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
+                                <span
+                                    class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-60 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
+                                <span
+                                    class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900">Get
+                                    Started</span>
+                                <span class="absolute inset-0 border-2 border-white rounded-full"></span>
+                            </a>
+                        </div>
+                        <div class="mt-3 md:hidden  flex justify-center items-center">
+                            <img src="assets/self-growth.png" alt="" class="mt-4 w-36 h-36">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center p-5">
+            <div class="mt-4">
+                <img src="assets/works.png" class="w-60 md:w-64 h-auto" alt="">
+            </div>
+            <div class="flex mt-7 flex-row overflow-x-auto space-x-6 scrollbar-hide ">
+                <img data-aos="fade-left" src="assets/project1.png" class="md:w-3/6 w-full h-auto rounded-lg" alt="">
+                <img data-aos="fade-left" src="assets/project2.png" class="md:w-3/6 w-full h-auto rounded-lg" alt="">
+                <img data-aos="fade-left" src="assets/project3.png" class="md:w-3/6 w-full h-auto rounded-lg" alt="">
+            </div>
+        </div>
+
+        <div
+            class="overflow-hidden mx-auto max-w-8xl flex-col align-center justify-center py-10 px-5 lg:px-8 2xl:px-20">
+            <div class="pt-20  lg:pt-[12rem] space-y-6 ">
+                <div
+                    class="flex flex-col  items-center justify-center space-y-6 lg:space-y-12 bg-gradient-to-b from-[#1a1a1a] to-white/55 rounded-2xl p-10">
+                    <div class="mt-3 flex flex-row items-center justify-center space-x-1">
+
+                        <img src="assets/arrows (1).png" class="  w-3 h-3" alt="">
+                        <span class="text-neutral-600 text-sm md:text-lg font-bold text-center m-1"> HOW WE WORK</span>
+                        <img src="assets/arrows (1).png" class=" w-3 h-3" alt="">
+                    </div>
+                    <div class="mt-1">
+                        <h1 class="text-white text-center text-2xl md:text-5xl font-bold">Superior, Easy & High
+                            Converting</h1>
+                    </div>
+                    <div class="flex flex-col lg:flex-row pt-10  justify-between space-x-6 items-center">
+                        <div class="relative flex flex-col lg:flex-row justify-evenly items-center text-center ">
+                            <div data-aos="fade-up" class="flex flex-col justify-between items-center p-3">
+                                <h1 class="text-9xl gardient text-center font-extrabold">1</h1>
+                                <h3 class="text-white text-3xl text-center font-bold">Design</h3>
+                                <p class="text-neutral-500 text-lg text-center">Design concept as soon as possible</p>
+                            </div>
+
+                            <div data-aos="fade-up" class="flex flex-col justify-between items-center p-3">
+                                <h1 class="text-9xl gardient text-center font-extrabold">2</h1>
+                                <h3 class="text-white text-3xl text-center font-bold">Development</h3>
+                                <p class="text-neutral-500 text-lg text-center">Your dedicated developer will we sculpt
+                                    digital experiences with the latest technologies</p>
+                            </div>
+
+                            <div data-aos="fade-up" class="flex flex-col justify-between items-center p-3">
+                                <h1 class="text-9xl gardient text-center font-extrabold">3</h1>
+                                <h3 class="text-white text-3xl text-center font-bold">Deploy/Ship</h3>
+                                <p class="text-neutral-500 text-lg text-center">Once approved watch your vision come to
+                                    life </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" class="flex flex-col justify-center items-center pt-10">
+                <div class="w-3/4 space-x-10">
+                    <h2 class="text-2xl lg:leading-relaxed leading-normal text-center md:text-4xl text-white/60">“I've
+                        worked with Nyxweb on two different
+                        websites, and they're phenomenal. they're incredibly fast!”</h2>
+                </div>
+                <div class="flex flex-row mt-7 items-center justify-center space-x-3">
+                    <img src="assets/profile.png" alt="">
+                    <div class="flex flex-col items-start">
+                        <p class="text-white font-semibold text-base">Dave Robins</p>
+                        <p class="text-white/60 text-sm">Founder at Stone.ai</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col text-center mt-10 pt-4">
+                <span  data-aos="fade-up" class="text-neutral-500 font-bold md:text-4xl text-2xl">UI/UX Design</span>
+                <span data-aos="fade-up" class="text-neutral-600 font-bold md:text-4xl text-2xl">Responsive Web Design</span>
+                <span data-aos="fade-up" class="text-neutral-700 font-bold md:text-4xl text-2xl">Frontend Development</span>
+                <span data-aos="fade-up" class="text-neutral-800 font-bold md:text-4xl text-2xl">SEO</span>
+            </div>
+
+            <div class="flex  mt-8 pt-3 items-center flex-col justify-between">
+                <div class="mt-4">
+                    <span data-aos="fade-up" class="text-neutral-600 font-bold text-xl">TOOLS</span>
+                </div>
+                <div data-aos="fade-up" class="flex-wrap mt-7 flex justify-between space-x-7 items-center">
+                    <img src="assets/next.png" class="w-16 h-16" alt="">
+                    <img src="assets/js.png" alt="">
+                    <img src="assets/figma.png" alt="">
+                </div>
+
+                <div class="flex flex-col justify-between items-center mt-10 pt-9">
+                    <div class="flex flex-col justify-center items-center p-2">
+                        <span class="text-neutral-600 font-semibold md:text-xl text-xl text-center">Pricing</span>
+                        <h3 class="text-white mt-4 font-bold text-center md:text-4xl text-2xl">Use our skills to grow
+                            your business rapidly!</h3>
+                    </div>
+                </div>
+
+                <div class="mt-10 p-5 flex flex-col space-y-6 md:space-y-0 md:flex-row md:space-x-6">
+
+                    <div data-aos="fade-up" class="rounded-3xl p-8 m-3 bg-[#181818]">
+                        <div class="flex items-center justify-between">
+                            <h3 id="tier-landing-page" class="text-white text-2xl font-bold tracking-tight leading-8">
+                                Premiume</h3>
+                        </div>
+                        <p class="mt-5 text-4xl font-extrabold text-white tracking-tight">$999/-</p><span
+                            class="text-white/50 tracking-wider text-xs">Pause or cancel anytime</span>
+                        <p class="text-white mt-5 text-md">Perfect for startups and Brands.
+                        </p>
+                        <div class="w-full h-[0.01rem] mt-5 mb-5 bg-white/10"></div><span
+                            class=" text-sm font-bold text-white">What's included:</span>
+                        <ul class="text-gray-300 mt-4 space-y-1 text-sm">
+                            <li class="flex gap-2 text-base  p-0 py-1 hover:bg-transparent  "><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true" class="text-white h-4 w-4 flex-none">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd"></path>
+                                </svg>One request at a time</li>
+                            <li class="flex gap-2 text-base  p-0 py-1 hover:bg-transparent  "><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true" class="text-white h-4 w-4 flex-none">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd"></path>
+                                </svg>World-class designer</li>
+                            <li class="flex gap-2 text-base  p-0 py-1 hover:bg-transparent  "><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true" class="text-white h-4 w-4 flex-none">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd"></path>
+                                </svg>Unlimited revisions/brands/users</li>
+                            <li class="flex gap-2 text-base  p-0 py-1 hover:bg-transparent  "><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true" class="text-white h-4 w-4 flex-none">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd"></path>
+                                </svg>24-48 hours turnaround</li>
+                            <li class="flex gap-2 text-base  p-0 py-1 hover:bg-transparent  "><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true" class="text-white h-4 w-4 flex-none">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd"></path>
+                                </svg>Chat directly in Slack</li>
+                        </ul><a href="https://cal.com/namya/15min" aria-describedby="tier-landing-page"
+                            class="text-white bg-transparent border shadow-sm mt-6 block rounded-2xl py-3 px-3 text-center text-lg font-bold cursor-pointer hover:scale-[102%] transition duration-300 ease-out">Book
+                            a call</a>
+                        <div class="mt-7"></div>
+                    </div>
+
+
+
+
+                    <div data-aos="fade-up" class="rounded-3xl p-8  xl:p-10 bg-[#181818]">
+                        <div class="flex items-center justify-between">
+                            <h3 id="tier-webapp" class="text-white text-2xl font-bold tracking-tight leading-8">Pro</h3>
+                            <div class="text-black  bg-white px-2 py-1 text-xs font-semibold rounded-full uppercase">
+                                Most Popular</div>
+                        </div>
+                        <p class="mt-5 text-4xl font-extrabold text-white tracking-tight">$149/-</p><span
+                            class="text-white/50 tracking-wider text-xs">Pause or cancel anytime</span>
+                        <p class="text-white mt-5 text-md">Landing Page for startups and brands.</p>
+                        <div class="w-full h-[0.01rem] mt-5 mb-5 bg-white/10"></div><span
+                            class=" text-sm font-bold text-white">Everything in Basic, plus:</span>
+                        <ul class="text-gray-300 mt-4 space-y-1 text-sm">
+                            <li class="flex gap-2 text-base p-0 py-1 hover:bg-transparent custom-cursor-on-hover"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true" class="text-white h-4 w-4 flex-none">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd"></path>
+                                </svg>Two requests at a time</li>
+                            <li class="flex gap-2 text-base p-0 py-1 hover:bg-transparent custom-cursor-on-hover"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true" class="text-white h-4 w-4 flex-none">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd"></path>
+                                </svg>2x world-class design engineers</li>
+                            <li class="flex gap-2 text-base p-0 py-1 hover:bg-transparent custom-cursor-on-hover"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true" class="text-white h-4 w-4 flex-none">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd"></path>
+                                </svg>Front-end development</li>
+                            <li class="flex gap-2 text-base p-0 py-1 hover:bg-transparent custom-cursor-on-hover"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true" class="text-white h-4 w-4 flex-none">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd"></path>
+                                </svg>Ongoing support and maintenance</li>
+                            <li class="flex gap-2 text-base p-0 py-1 hover:bg-transparent custom-cursor-on-hover"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true" class="text-white h-4 w-4 flex-none">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd"></path>
+                                </svg>Expert project management</li>
+                        </ul><a href="https://cal.com/namya/15min" aria-describedby="tier-webapp"
+                            class="rounded-xl bg-white p-4 px-12 lg:px-16 text-lg font-bold text-primary tracking-tight cta-btn  shadow-sm mt-6 block rounded-2xl py-3 px-3 text-center text-lg font-bold cursor-pointer hover:scale-[102%] transition duration-300 ease-out">Book
+                            a call</a>
+                        <div class="mt-7"></div>
+                    </div>
+
+
+                    <div data-aos="fade-up" class="rounded-3xl p-8 m-3  xl:p-10 bg-[#181818]">
+                        <div class="flex items-center justify-between">
+                            <h3 id="tier-landing-page" class="text-white text-2xl font-bold tracking-tight leading-8">
+                                ADVANCE</h3>
+                        </div>
+                        <p class="mt-5 text-4xl font-extrabold text-white tracking-tight">$499/-</p><span
+                            class="text-white/50 tracking-wider text-xs">Pause or cancel anytime</span>
+                        <p class="text-white mt-5 text-md">Advanced Landing Pages for brands and startups</p>
+                        <div class="w-full h-[0.01rem] mt-5 mb-5 bg-white/10"></div><span
+                            class=" text-sm font-bold text-white">What's included:</span>
+                        <ul class="text-gray-300 mt-4 space-y-1 text-sm">
+                            <li class="flex gap-2 text-base  p-0 py-1 hover:bg-transparent  "><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true" class="text-white h-4 w-4 flex-none">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd"></path>
+                                </svg>One request at a time</li>
+                            <li class="flex gap-2 text-base  p-0 py-1 hover:bg-transparent  "><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true" class="text-white h-4 w-4 flex-none">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd"></path>
+                                </svg>World-class designer</li>
+                            <li class="flex gap-2 text-base  p-0 py-1 hover:bg-transparent  "><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true" class="text-white h-4 w-4 flex-none">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd"></path>
+                                </svg>Unlimited revisions/brands/users</li>
+                            <li class="flex gap-2 text-base  p-0 py-1 hover:bg-transparent  "><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true" class="text-white h-4 w-4 flex-none">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd"></path>
+                                </svg>24-48 hours turnaround</li>
+                            <li class="flex gap-2 text-base  p-0 py-1 hover:bg-transparent  "><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true" class="text-white h-4 w-4 flex-none">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd"></path>
+                                </svg>Chat directly in Slack</li>
+                        </ul><a href="https://cal.com/namya/15min" aria-describedby="tier-landing-page"
+                            class="text-white bg-transparent border shadow-sm mt-6 block rounded-2xl py-3 px-3 text-center text-lg font-bold cursor-pointer hover:qio[52scale-[102%] transition duration-300 ease-out">Book
+                            a call</a>
+                        <div class="mt-7"></div>
+                    </div>
+
+                </div>
+
+                <div data-aos="fade-up" class="flex flex-col p-2 md:p-5 mt-10 justify-center items-center">
+                    <h2 class="text-white m-4 text-center font-bold text-2xl md:text-4xl">Why yo are still waiting?
+                        let's start and grow your business</h2>
+                    <a href="#" class="mt-6 px-16 py-3 text-white border-2 border-white rounded-3xl">Get started</a>
+                </div>
+
+                <footer class="bg-primary border-t border-white/10 mt-20 lg:mt-[12rem]">
+                    <div class="mx-auto max-w-8xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+                        <div class="flex justify-center space-x-6 md:order-2"><a href="https://twitter.com/CodesFlex"
+                                class="text-white hover:text-white/50"><span class="sr-only">X</span><svg
+                                    fill="currentColor" viewBox="0 0 24 24" class="h-5 w-5" aria-hidden="true">
+                                    <path
+                                        d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z">
+                                    </path>
+                                </svg></a><a href="https://www.linkedin.com/company/supafast-design/"
+                                class="text-white hover:text-white/50"><span class="sr-only">Linkedin</span><svg
+                                    fill="currentColor" viewBox="0 0 24 24" class="h-5 w-5" aria-hidden="true">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+                                    </path>
+                                </svg></a><a href="mailto:hello@supafastdesign.com"
+                                class="text-white hover:text-white/50"><span class="sr-only">Email</span><svg
+                                    fill="currentColor" viewBox="0 0 24 24" class="h-5 w-5" aria-hidden="true">
+                                    <path
+                                        d="M15.61 12c0 1.99-1.62 3.61-3.61 3.61-1.99 0-3.61-1.62-3.61-3.61 0-1.99 1.62-3.61 3.61-3.61 1.99 0 3.61 1.62 3.61 3.61M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12c2.424 0 4.761-.722 6.76-2.087l.034-.024-1.617-1.879-.027.017A9.494 9.494 0 0 1 12 21.54c-5.26 0-9.54-4.28-9.54-9.54 0-5.26 4.28-9.54 9.54-9.54 5.26 0 9.54 4.28 9.54 9.54a9.63 9.63 0 0 1-.225 2.05c-.301 1.239-1.169 1.618-1.82 1.568-.654-.053-1.42-.52-1.426-1.661V12A6.076 6.076 0 0 0 12 5.93 6.076 6.076 0 0 0 5.93 12 6.076 6.076 0 0 0 12 18.07a6.02 6.02 0 0 0 4.3-1.792 3.9 3.9 0 0 0 3.32 1.805c.874 0 1.74-.292 2.437-.821.719-.547 1.256-1.336 1.553-2.285.047-.154.135-.504.135-.507l.002-.013c.175-.76.253-1.52.253-2.457 0-6.617-5.383-12-12-12">
+                                    </path>
+                                </svg></a></div>
+                       <img src="assets/Logo.svg" class="mt-4 mb-4" alt="">
+                            <p class="text-left text-sm leading-5 text-white/50 my-2">A design &amp; Development agency
+                                based in INDIA</p>
+                            <p class="text-left text-xs leading-5 text-white/50">© 2023 NyxWeb</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
