@@ -26,7 +26,17 @@
         padding: 0;
         box-sizing: border-box;
     }
-
+   
+.lb{
+    z-index: 20;
+    transition: 0.3s ease-in-out;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.603);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
     .scrollbar-hide::-webkit-scrollbar {
         display: none;
     }
@@ -52,17 +62,18 @@
     <div id="root">
         <div class="justify-center  flex items-center flex-col p-5">
             
-            <nav class="flex flex-row justify-center relative items-center w-full p-7 md:justify-between">
+            <nav id="top-nav" class="  flex  flex-row justify-center relative items-center w-full p-7 md:justify-between">
                 <ul class="hidden md:flex md:space-x-4  ">
                     <li><a class="text-lg text-white p-2 hover:bg-neutral-700 hover:rounded-lg" href="#pricing">Pricing</a>
                     </li>
-                    <li><a class="text-lg text-white p-2 hover:bg-neutral-700 hover:rounded-lg" href="#how-it-works">Ho it works?</a></li>
+                    <li><a class="text-lg text-white p-2 hover:bg-neutral-700 hover:rounded-lg" href="#how-it-works">How it works?</a></li>
                 </ul>
                 <img src="assets/Logo.svg" class="" alt="">
                 <a class="md:block hidden" href="#"><button
                         class="  border text-white border-neutral-600 rounded-lg hover:border-neutral-400 p-3">Press G
                         to Get started</button></a>
             </nav>
+            
             <div
                 class="flex flex-col items-center justify-center space-y-6 lg:space-y-8 pt-20 relative  md:max-w-2xl lg:max-w-7xl mx-auto">
                 <div class="flex flex-col items-center justify-center space-y-2">
@@ -82,18 +93,7 @@
                     </div>
                     <div class=" flex flex-col justify-center items-center">
                         <div class="m-3">
-
-                            <a href="mailto:fuzelxr@gmail.com"
-                                class="relative inline-flex items-center justify-start inline-block px-10 py-5 overflow-hidden font-bold rounded-full group">
-                                <span
-                                    class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
-                                <span
-                                    class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-60 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
-                                <span
-                                    class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900">Get
-                                    Started</span>
-                                <span class="absolute inset-0 border-2 border-white rounded-full"></span>
-                            </a>
+  <a href="mailt0:fuzelxr@gmail.com" class="px-7 py-4 font-bold hover:bg-neutral-300 bg-white rounded-2xl">Get Started</a>
                         </div>
                         <div class="mt-3 md:hidden  flex justify-center items-center">
                             <img src="assets/self-growth.png" alt="" class="mt-4 w-36 h-36">
@@ -388,7 +388,7 @@
                                 </svg></a></div>
                        <img src="assets/Logo.svg" class="mt-4 mb-4" alt="">
                             <p class="text-left text-sm leading-5 text-white/50 my-2">A design &amp; Development agency
-                                based in INDIA</p>
+                                based in INDIA </p>
                             <p class="text-left text-xs leading-5 text-white/50">© 2023 NyxWeb</p>
                         </div>
                     </div>
