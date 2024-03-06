@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to [Agency Name], your trusted destination for professional frontend development services. Specializing in custom web design and responsive frontend development, our expert team crafts visually stunning websites that captivate your audience. With expertise in HTML, CSS, and JavaScript, we deliver seamless user experiences tailored to your business needs. Whether you need a complete website overhaul, frontend redesign, or UI/UX enhancements, we're here to elevate your online presence. Contact us today for cutting-edge frontend solutions that set your business apart!">
+    <meta name="description" content="Welcome to NyxWeb, your trusted destination for professional frontend development services. Specializing in custom web design and responsive frontend development, our expert team crafts visually stunning websites that captivate your audience. With expertise in HTML, CSS, and JavaScript, we deliver seamless user experiences tailored to your business needs. Whether you need a complete website overhaul, frontend redesign, or UI/UX enhancements, we're here to elevate your online presence. Contact us today for cutting-edge frontend solutions that set your business apart!">
     <meta name="keywords" content="Website, Web development, website development, Landing page, Web development services, Custom website development
-    , Responsive web design, UI/UX design, Front-end development, SEO-friendly website development, Website redesign, Website development agency [ahmedabad], [ahmedabad] web development services
+    , Responsive web design, free website, free landing page, free website creator, UI/UX design, Front-end development, SEO-friendly website development, Website redesign, Website development agency [ahmedabad], [ahmedabad] web development services
     ">
     <meta name="author" content="Fuzail Mansuri">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,6 +55,26 @@
         background: linear-gradient(128deg, rgba(0, 0, 0, 1) 28%, rgba(52, 52, 52, 1) 43%, rgba(98, 98, 98, 1) 49%, rgba(59, 59, 59, 1) 55%, rgba(0, 0, 0, 1) 71%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
     }
+    .gardient-btn {
+           margin: 1.2rem;
+       
+            background: linear-gradient(to right, #3498db, #8e44ad, #e74c3c);
+           
+            animation: gradientAnimation 4s linear infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
 </style>
 
 <body>
@@ -92,9 +112,14 @@
                             customer conversion first, then design!</p>
                     </div>
                     <div class=" flex flex-col justify-center items-center">
-                        <div class="m-3">
-  <a href="mailto:fuzelxr@gmail.com" class="px-7 py-4 font-bold hover:bg-neutral-300 bg-white rounded-2xl">Get Started</a>
-                        </div>
+                        
+                            <a href="#" class="px-7  py-5 font-bold text-white hover:shadow-lg  rounded-2xl gardient-btn ">
+            Get Your Free Website
+                            </a>   
+                      
+                     
+  <a href="mailto:fuzelxr@gmail.com" class="px-7 py-4 font-bold m-7 hover:text-black hover:bg-white  border-2 border-white text-white  rounded-2xl">Get Started</a>
+                       
                         <div class="mt-3 md:hidden  flex justify-center items-center">
                             <img src="assets/self-growth.png" alt="" class="mt-4 w-36 h-36">
                         </div>
@@ -399,6 +424,31 @@
         </div>
 
     </div>
+    <script>
+        //get the navbar component
+const nav = document.getElementById('top-nav');
+
+
+// function to handle 
+const handleScroll= () =>{
+
+    //check the scroll!
+    let checkScroll = window.scrollY;
+    if(checkScroll > 50){
+        nav.classList.add('lb')
+    } else{
+      nav.classList.remove('lb')
+    }
+}
+
+  
+  // Listen for the scroll event
+  window.addEventListener('scroll', handleScroll);
+
+
+  
+
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
     <script>
