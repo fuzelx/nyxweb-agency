@@ -39,7 +39,7 @@ measurementId: "G-9TMRPPE3FZ"
 
         // Optionally, reset the form after submission
         document.getElementById("contactForm").reset();
-
+alert("Your request has submitted! please be patient🙏🏻")
         popUp.classList.remove('hidden');
     });
 
